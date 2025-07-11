@@ -60,13 +60,26 @@ const Header = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-1 py-3">
             {[
-              'Cisco', 'Microsoft', 'AWS', 'CompTIA', 'VMware', 
-              'Google', 'Oracle', 'PMI', 'ISACA', 'Fortinet', 
-              'IIA', 'Snowflake'
+              { name: 'Cisco', path: '/cisco' },
+              { name: 'Microsoft', path: '/microsoft' },
+              { name: 'AWS', path: '/aws' },
+              { name: 'CompTIA', path: '/comptia' },
+              { name: 'VMware', path: '/vmware' },
+              { name: 'Google', path: '/google' },
+              { name: 'Oracle', path: '/oracle' },
+              { name: 'PMI', path: '/pmi' },
+              { name: 'ISACA', path: '/isaca' },
+              { name: 'Fortinet', path: '/fortinet' },
+              { name: 'IIA', path: '/iia' },
+              { name: 'Snowflake', path: '/snowflake' }
             ].map((cert) => (
-              <div key={cert} className="px-3 py-1 hover:bg-white/10 rounded cursor-pointer transition-colors text-sm">
-                {cert}
-              </div>
+              <a 
+                key={cert.name} 
+                href={cert.path}
+                className="px-3 py-1 hover:bg-white/10 rounded cursor-pointer transition-colors text-sm"
+              >
+                {cert.name}
+              </a>
             ))}
           </div>
         </div>
