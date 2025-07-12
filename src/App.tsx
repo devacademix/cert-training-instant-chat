@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import AllCourses from "./pages/AllCourses";
 import NotFound from "./pages/NotFound";
 import Cisco from "./pages/Cisco";
 import Microsoft from "./pages/Microsoft";
@@ -45,6 +46,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/all-courses" element={<AllCourses />} />
           <Route path="/cisco" element={<Cisco />} />
           <Route path="/microsoft" element={<Microsoft />} />
           <Route path="/aws" element={<AWS />} />

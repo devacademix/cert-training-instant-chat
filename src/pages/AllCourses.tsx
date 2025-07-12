@@ -1,16 +1,16 @@
-import { Phone, Mail, MessageCircle, ChevronDown } from "lucide-react";
+import { MessageCircle, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 
-const Header = () => {
-  const whatsappNumber = "+918603516998";
+const AllCourses = () => {
   const whatsappLink = "https://wa.me/c/918603516998";
-  const email = "info@globaltrainingcertifications.org";
 
   const courseCategories = [
     {
       name: 'Cisco',
       path: '/cisco',
+      description: 'Network infrastructure and security certifications',
       subcourses: [
         'CCNA (Cisco Certified Network Associate)',
         'CCNP (Cisco Certified Network Professional)',
@@ -23,6 +23,7 @@ const Header = () => {
     {
       name: 'Microsoft',
       path: '/microsoft',
+      description: 'Cloud, productivity and enterprise solutions',
       subcourses: [
         'Microsoft Azure (AZ-900, AZ-104, AZ-305)',
         'Microsoft 365 (MS-900, MS-101)',
@@ -35,6 +36,7 @@ const Header = () => {
     {
       name: 'AWS',
       path: '/aws',
+      description: 'Amazon Web Services cloud certifications',
       subcourses: [
         'AWS Cloud Practitioner (CLF-C02)',
         'AWS Solutions Architect (SAA-C03)',
@@ -47,6 +49,7 @@ const Header = () => {
     {
       name: 'CompTIA',
       path: '/comptia',
+      description: 'IT fundamentals and cybersecurity',
       subcourses: [
         'CompTIA A+',
         'CompTIA Network+',
@@ -60,6 +63,7 @@ const Header = () => {
     {
       name: 'VMware',
       path: '/vmware',
+      description: 'Virtualization and cloud infrastructure',
       subcourses: [
         'VMware vSphere (VCP-DCV)',
         'VMware NSX-T (VCP-NV)',
@@ -71,6 +75,7 @@ const Header = () => {
     {
       name: 'Google',
       path: '/google',
+      description: 'Google Cloud Platform certifications',
       subcourses: [
         'Google Cloud Digital Leader',
         'Google Associate Cloud Engineer',
@@ -82,6 +87,7 @@ const Header = () => {
     {
       name: 'Oracle',
       path: '/oracle',
+      description: 'Database and enterprise applications',
       subcourses: [
         'Oracle Cloud Infrastructure (OCI Foundations)',
         'Oracle Database SQL Certified Associate',
@@ -93,6 +99,7 @@ const Header = () => {
     {
       name: 'PMI',
       path: '/pmi',
+      description: 'Project management certifications',
       subcourses: [
         'PMP (Project Management Professional)',
         'CAPM (Certified Associate in Project Management)',
@@ -103,6 +110,7 @@ const Header = () => {
     {
       name: 'ISACA',
       path: '/isaca',
+      description: 'IT governance and cybersecurity',
       subcourses: [
         'CISA (Certified Information Systems Auditor)',
         'CISM (Certified Information Security Manager)',
@@ -113,6 +121,7 @@ const Header = () => {
     {
       name: 'Fortinet',
       path: '/fortinet',
+      description: 'Network security solutions',
       subcourses: [
         'NSE 1 to NSE 8 (Network Security Expert)',
         'FortiGate Firewall Training',
@@ -123,6 +132,7 @@ const Header = () => {
     {
       name: 'IIA',
       path: '/iia',
+      description: 'Internal audit certifications',
       subcourses: [
         'CIA (Certified Internal Auditor)',
         'CRMA (Certification in Risk Management Assurance)',
@@ -132,6 +142,7 @@ const Header = () => {
     {
       name: 'Snowflake',
       path: '/snowflake',
+      description: 'Data platform certifications',
       subcourses: [
         'Snowflake SnowPro Core Certification',
         'Snowflake Advanced Architect',
@@ -143,6 +154,7 @@ const Header = () => {
     {
       name: 'EC-Council',
       path: '/ec-council',
+      description: 'Ethical hacking and cybersecurity',
       subcourses: [
         'CEH (Certified Ethical Hacker)',
         'CHFI (Computer Hacking Forensic Investigator)',
@@ -154,6 +166,7 @@ const Header = () => {
     {
       name: 'ITIL',
       path: '/itil',
+      description: 'IT service management framework',
       subcourses: [
         'ITIL 4 Foundation',
         'ITIL 4 Managing Professional',
@@ -165,6 +178,7 @@ const Header = () => {
     {
       name: 'Prince2',
       path: '/prince2',
+      description: 'Project management methodology',
       subcourses: [
         'PRINCE2 Foundation',
         'PRINCE2 Practitioner',
@@ -175,6 +189,7 @@ const Header = () => {
     {
       name: 'Juniper',
       path: '/juniper',
+      description: 'Network infrastructure solutions',
       subcourses: [
         'JNCIA (Junos Associate)',
         'JNCIS (Junos Specialist)',
@@ -186,6 +201,7 @@ const Header = () => {
     {
       name: 'Salesforce',
       path: '/salesforce',
+      description: 'CRM and cloud platform',
       subcourses: [
         'Salesforce Administrator',
         'Salesforce Advanced Administrator',
@@ -197,6 +213,7 @@ const Header = () => {
     {
       name: 'ServiceNow',
       path: '/servicenow',
+      description: 'IT service management platform',
       subcourses: [
         'ServiceNow System Administrator',
         'ServiceNow Application Developer',
@@ -207,6 +224,7 @@ const Header = () => {
     {
       name: 'Scrum',
       path: '/scrum',
+      description: 'Agile project management framework',
       subcourses: [
         'Certified ScrumMaster (CSM)',
         'Certified Scrum Product Owner (CSPO)',
@@ -218,6 +236,7 @@ const Header = () => {
     {
       name: 'Six Sigma',
       path: '/six-sigma',
+      description: 'Process improvement methodology',
       subcourses: [
         'Six Sigma White Belt',
         'Six Sigma Yellow Belt',
@@ -229,6 +248,7 @@ const Header = () => {
     {
       name: 'IBM',
       path: '/ibm',
+      description: 'Enterprise technology solutions',
       subcourses: [
         'IBM Cloud',
         'IBM Watson',
@@ -240,6 +260,7 @@ const Header = () => {
     {
       name: 'SAP',
       path: '/sap',
+      description: 'Enterprise resource planning',
       subcourses: [
         'SAP S/4HANA',
         'SAP FICO',
@@ -251,6 +272,7 @@ const Header = () => {
     {
       name: 'Splunk',
       path: '/splunk',
+      description: 'Data analytics and monitoring',
       subcourses: [
         'Splunk Core Certified User',
         'Splunk Core Certified Power User',
@@ -261,6 +283,7 @@ const Header = () => {
     {
       name: 'Palo Alto',
       path: '/palo-alto',
+      description: 'Next-generation cybersecurity',
       subcourses: [
         'PCNSA (Palo Alto Networks Certified Network Security Administrator)',
         'PCNSE (Palo Alto Networks Certified Network Security Engineer)',
@@ -271,6 +294,7 @@ const Header = () => {
     {
       name: 'Kubernetes',
       path: '/kubernetes',
+      description: 'Container orchestration platform',
       subcourses: [
         'CKA (Certified Kubernetes Administrator)',
         'CKAD (Certified Kubernetes Application Developer)',
@@ -280,6 +304,7 @@ const Header = () => {
     {
       name: 'TOGAF',
       path: '/togaf',
+      description: 'Enterprise architecture framework',
       subcourses: [
         'TOGAF 9 Foundation',
         'TOGAF 9 Certified',
@@ -289,6 +314,7 @@ const Header = () => {
     {
       name: 'DevOps',
       path: '/devops',
+      description: 'Development and operations practices',
       subcourses: [
         'DevOps Foundation',
         'DevOps Leader',
@@ -299,6 +325,7 @@ const Header = () => {
     {
       name: 'ISTQB',
       path: '/istqb',
+      description: 'Software testing certifications',
       subcourses: [
         'ISTQB Foundation Level',
         'ISTQB Advanced Level',
@@ -309,6 +336,7 @@ const Header = () => {
     {
       name: 'IIBA',
       path: '/iiba',
+      description: 'Business analysis certifications',
       subcourses: [
         'CBAP (Certified Business Analysis Professional)',
         'CCBA (Certification of Competency in Business Analysis)',
@@ -319,113 +347,100 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-white shadow-sm border-b">
-      {/* Top contact bar */}
-      <div className="bg-gradient-primary text-white py-2">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-2 text-sm">
-            <div className="flex items-center gap-4">
-              <a href={`mailto:${email}`} className="flex items-center gap-1 hover:text-blue-200 transition-colors">
-                <Mail className="h-4 w-4" />
-                {email}
-              </a>
-            </div>
-            <div className="flex items-center gap-4">
-              <span className="text-blue-100">For Order/Enquiry:</span>
-              <a href={`tel:${whatsappNumber}`} className="flex items-center gap-1 hover:text-blue-200 transition-colors">
-                <Phone className="h-4 w-4" />
-                {whatsappNumber}
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Main header */}
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-4">
-            <div>
-              <h1 className="text-2xl lg:text-3xl font-bold text-primary">
-                GLOBAL<span className="text-primary-dark">TRAINING</span>
-              </h1>
-              <p className="text-sm text-muted-foreground">HELPING YOU REAL TIME ONLINE</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
+      {/* Header */}
+      <div className="bg-gradient-primary text-white py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+            All <span className="text-blue-200">Certification Courses</span>
+          </h1>
+          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            Explore our comprehensive range of worldwide IT/NON-IT certifications with remote support and 100% passing guarantee.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               variant="hero"
               size="lg"
               onClick={() => window.open(whatsappLink, '_blank')}
-              className="flex items-center gap-2"
+              className="bg-white text-primary hover:bg-blue-50 shadow-glow"
             >
-              <MessageCircle className="h-5 w-5" />
-              WhatsApp Now
+              <MessageCircle className="h-5 w-5 mr-2" />
+              Get Exam Support Now
             </Button>
           </div>
         </div>
       </div>
 
-      {/* Navigation */}
-      <nav className="bg-gradient-primary text-white overflow-hidden">
-        <style>{`
-          .scrollbar-hide {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-          }
-          .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-          }
-        `}</style>
-        <div className="px-4 py-3">
-          <div className="flex overflow-x-auto scrollbar-hide gap-4" style={{
-            scrollBehavior: 'smooth',
-            WebkitOverflowScrolling: 'touch'
-          }}>
-            {courseCategories.map((category) => (
-              <div key={category.name} className="relative group flex-shrink-0">
-                <Link
-                  to={category.path}
-                  className="inline-flex items-center gap-1 text-white hover:bg-white/10 px-4 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap"
-                >
-                  {category.name}
-                  <ChevronDown className="h-4 w-4" />
-                </Link>
-                
-                {/* Dropdown menu */}
-                <div className="absolute top-full left-0 mt-1 w-80 bg-white text-gray-900 shadow-glow rounded-lg z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2">
-                  <div className="p-4">
-                    <h4 className="font-semibold text-primary mb-3 border-b pb-2">{category.name} Certifications</h4>
-                    <ul className="space-y-1 max-h-64 overflow-y-auto">
-                      {category.subcourses.map((course, index) => (
-                        <li key={index}>
-                          <Link
-                            to={`${category.path}/${course.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-]/gi, '')}`}
-                            className="block text-left w-full text-sm text-gray-600 hover:text-primary hover:bg-gray-50 p-2 rounded transition-colors"
-                          >
-                            • {course}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="mt-4 pt-3 border-t">
-                      <button
-                        onClick={() => window.open(whatsappLink, '_blank')}
-                        className="w-full bg-primary text-white px-4 py-2 rounded text-sm hover:bg-primary-dark transition-colors shadow-sm"
-                      >
-                        Get Pricing on WhatsApp
-                      </button>
-                    </div>
-                  </div>
+      {/* Courses Grid */}
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {courseCategories.map((category) => (
+            <Card key={category.name} className="border-0 shadow-card hover:shadow-glow transition-all duration-300 bg-white group">
+              <CardContent className="p-6">
+                <div className="mb-4">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                    {category.name}
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    {category.description}
+                  </p>
                 </div>
-              </div>
-            ))}
-          </div>
+
+                <div className="space-y-2 mb-6">
+                  {category.subcourses.slice(0, 3).map((course, index) => (
+                    <div key={index} className="flex items-center gap-2 text-sm text-gray-600">
+                      <ChevronRight className="h-4 w-4 text-primary" />
+                      <span>{course}</span>
+                    </div>
+                  ))}
+                  {category.subcourses.length > 3 && (
+                    <div className="text-sm text-gray-500 pl-6">
+                      +{category.subcourses.length - 3} more courses
+                    </div>
+                  )}
+                </div>
+
+                <div className="space-y-3">
+                  <Link to={category.path}>
+                    <Button className="w-full bg-primary hover:bg-primary-dark text-white">
+                      View All {category.name} Courses
+                    </Button>
+                  </Link>
+                  <Button
+                    variant="outline"
+                    className="w-full border-primary text-primary hover:bg-primary hover:text-white"
+                    onClick={() => window.open(whatsappLink, '_blank')}
+                  >
+                    <MessageCircle className="h-4 w-4 mr-2" />
+                    Get Pricing
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
-      </nav>
-    </header>
+
+        {/* Contact Section */}
+        <div className="mt-16 text-center bg-gray-50 rounded-2xl p-8">
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            Need Help Choosing the Right Certification?
+          </h3>
+          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+            Our expert team provides worldwide IT/NON-IT certification support with remote assistance. 
+            Contact us for personalized guidance and guaranteed exam success.
+          </p>
+          <Button
+            size="lg"
+            onClick={() => window.open(whatsappLink, '_blank')}
+            className="bg-primary hover:bg-primary-dark text-white"
+          >
+            <MessageCircle className="h-5 w-5 mr-2" />
+            Contact Expert on WhatsApp
+          </Button>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default Header;
+export default AllCourses;

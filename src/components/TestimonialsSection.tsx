@@ -85,9 +85,9 @@ const TestimonialsSection = () => {
             <div className="grid md:grid-cols-3 gap-8">
               {/* Success Story Cards */}
               {[
-                { title: "Cisco Certification", count: "500+" },
-                { title: "Microsoft Azure", count: "800+" },
-                { title: "AWS Solutions", count: "350+" }
+                { title: "Total Exams Passed", count: "1500+" },
+                { title: "Worldwide Support", count: "24/7" },
+                { title: "Success Rate", count: "100%" }
               ].map((story, index) => (
                 <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
                   <div className="text-3xl font-bold text-primary mb-2">
@@ -97,7 +97,7 @@ const TestimonialsSection = () => {
                     {story.title}
                   </div>
                   <div className="text-sm text-gray-500 mt-1">
-                    Successful Candidates
+                    Remote IT/NON-IT Certifications
                   </div>
                 </div>
               ))}

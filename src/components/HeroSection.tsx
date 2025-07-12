@@ -1,5 +1,6 @@
 import { MessageCircle, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-image.jpg";
 
 const HeroSection = () => {
@@ -28,7 +29,7 @@ const HeroSection = () => {
             
             <div className="space-y-4">
               <p className="text-xl text-blue-100">
-                Pass your certification exams with our proven methods and expert guidance.
+                Get worldwide IT/NON-IT Certifications with remote support and 100% passing guarantee.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
@@ -38,14 +39,17 @@ const HeroSection = () => {
                   className="bg-white text-primary hover:bg-blue-50 shadow-glow text-lg px-8 py-6"
                 >
                   <MessageCircle className="h-6 w-6 mr-2" />
-                  Get Started Now
+                  Get Exam Support Now
                 </Button>
                 <Button
-                  variant="outline"
+                  variant="hero"
                   size="lg"
-                  className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6"
+                  asChild
+                  className="bg-white/10 text-white border-2 border-white hover:bg-white hover:text-primary text-lg px-8 py-6 backdrop-blur-sm"
                 >
-                  Learn More
+                  <Link to="/all-courses">
+                    Learn More
+                  </Link>
                 </Button>
               </div>
             </div>
