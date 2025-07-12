@@ -145,6 +145,182 @@ const Header = () => {
         'Snowflake Administrator',
         'Snowflake Business Intelligence Integration'
       ]
+    },
+    {
+      name: 'EC-Council',
+      path: '/ec-council',
+      subcourses: [
+        'CEH (Certified Ethical Hacker)',
+        'CHFI (Computer Hacking Forensic Investigator)',
+        'ECSA (EC-Council Certified Security Analyst)',
+        'ECIH (EC-Council Incident Handler)',
+        'CEI (Certified Encryption Specialist)'
+      ]
+    },
+    {
+      name: 'ITIL',
+      path: '/itil',
+      subcourses: [
+        'ITIL 4 Foundation',
+        'ITIL 4 Managing Professional',
+        'ITIL 4 Strategic Leader',
+        'ITIL 4 Master',
+        'ITIL Service Management'
+      ]
+    },
+    {
+      name: 'Prince2',
+      path: '/prince2',
+      subcourses: [
+        'PRINCE2 Foundation',
+        'PRINCE2 Practitioner',
+        'PRINCE2 Agile Foundation',
+        'PRINCE2 Agile Practitioner'
+      ]
+    },
+    {
+      name: 'Juniper',
+      path: '/juniper',
+      subcourses: [
+        'JNCIA (Junos Associate)',
+        'JNCIS (Junos Specialist)',
+        'JNCIP (Junos Professional)',
+        'JNCIE (Junos Expert)',
+        'Juniper Security'
+      ]
+    },
+    {
+      name: 'Salesforce',
+      path: '/salesforce',
+      subcourses: [
+        'Salesforce Administrator',
+        'Salesforce Advanced Administrator',
+        'Salesforce Platform Developer',
+        'Salesforce App Builder',
+        'Salesforce Marketing Cloud'
+      ]
+    },
+    {
+      name: 'ServiceNow',
+      path: '/servicenow',
+      subcourses: [
+        'ServiceNow System Administrator',
+        'ServiceNow Application Developer',
+        'ServiceNow Implementation Specialist',
+        'ServiceNow Certified Master Architect'
+      ]
+    },
+    {
+      name: 'Scrum',
+      path: '/scrum',
+      subcourses: [
+        'Certified ScrumMaster (CSM)',
+        'Certified Scrum Product Owner (CSPO)',
+        'Advanced Certified ScrumMaster (A-CSM)',
+        'Certified Scrum Developer (CSD)',
+        'Professional Scrum Master (PSM)'
+      ]
+    },
+    {
+      name: 'Six Sigma',
+      path: '/six-sigma',
+      subcourses: [
+        'Six Sigma White Belt',
+        'Six Sigma Yellow Belt',
+        'Six Sigma Green Belt',
+        'Six Sigma Black Belt',
+        'Six Sigma Master Black Belt'
+      ]
+    },
+    {
+      name: 'IBM',
+      path: '/ibm',
+      subcourses: [
+        'IBM Cloud',
+        'IBM Watson',
+        'IBM Security',
+        'IBM Data Science',
+        'IBM DevOps'
+      ]
+    },
+    {
+      name: 'SAP',
+      path: '/sap',
+      subcourses: [
+        'SAP S/4HANA',
+        'SAP FICO',
+        'SAP MM',
+        'SAP SD',
+        'SAP ABAP'
+      ]
+    },
+    {
+      name: 'Splunk',
+      path: '/splunk',
+      subcourses: [
+        'Splunk Core Certified User',
+        'Splunk Core Certified Power User',
+        'Splunk Enterprise Certified Admin',
+        'Splunk Enterprise Certified Architect'
+      ]
+    },
+    {
+      name: 'Palo Alto',
+      path: '/palo-alto',
+      subcourses: [
+        'PCNSA (Palo Alto Networks Certified Network Security Administrator)',
+        'PCNSE (Palo Alto Networks Certified Network Security Engineer)',
+        'PCCSA (Palo Alto Networks Certified Cybersecurity Associate)',
+        'PCCSE (Palo Alto Networks Certified Cybersecurity Engineer)'
+      ]
+    },
+    {
+      name: 'Kubernetes',
+      path: '/kubernetes',
+      subcourses: [
+        'CKA (Certified Kubernetes Administrator)',
+        'CKAD (Certified Kubernetes Application Developer)',
+        'CKS (Certified Kubernetes Security Specialist)'
+      ]
+    },
+    {
+      name: 'TOGAF',
+      path: '/togaf',
+      subcourses: [
+        'TOGAF 9 Foundation',
+        'TOGAF 9 Certified',
+        'TOGAF Enterprise Architecture'
+      ]
+    },
+    {
+      name: 'DevOps',
+      path: '/devops',
+      subcourses: [
+        'DevOps Foundation',
+        'DevOps Leader',
+        'DevOps Engineering',
+        'Site Reliability Engineering'
+      ]
+    },
+    {
+      name: 'ISTQB',
+      path: '/istqb',
+      subcourses: [
+        'ISTQB Foundation Level',
+        'ISTQB Advanced Level',
+        'ISTQB Expert Level',
+        'ISTQB Agile Testing'
+      ]
+    },
+    {
+      name: 'IIBA',
+      path: '/iiba',
+      subcourses: [
+        'CBAP (Certified Business Analysis Professional)',
+        'CCBA (Certification of Competency in Business Analysis)',
+        'ECBA (Entry Certificate in Business Analysis)',
+        'CBDA (Certified Business Data Analyst)'
+      ]
     }
   ];
 
