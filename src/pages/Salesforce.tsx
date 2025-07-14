@@ -1,5 +1,3 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import CourseLayout from '@/components/CourseLayout';
 
 const Salesforce = () => {
@@ -32,16 +30,12 @@ const Salesforce = () => {
   ];
 
   return (
-    <>
-      <Header />
-      <CourseLayout
-        provider="Salesforce"
-        title="Salesforce Certifications"
-        description="Master the world's #1 CRM platform with Salesforce certifications. Learn administration, development, and specialized cloud solutions."
-        courses={courses}
-      />
-      <Footer />
-    </>
+    <CourseLayout
+      provider="Salesforce"
+      title="Salesforce Certifications"
+      description="Master the world's #1 CRM platform with Salesforce certifications. Learn administration, development, and specialized cloud solutions."
+      courses={courses}
+    />
   );
 };
 

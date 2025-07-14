@@ -1,5 +1,3 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import CourseLayout from '@/components/CourseLayout';
 
 const ServiceNow = () => {
@@ -27,16 +25,12 @@ const ServiceNow = () => {
   ];
 
   return (
-    <>
-      <Header />
-      <CourseLayout
-        provider="ServiceNow"
-        title="ServiceNow Certifications"
-        description="Master enterprise service management with ServiceNow certifications. Learn platform administration, development, and implementation."
-        courses={courses}
-      />
-      <Footer />
-    </>
+    <CourseLayout
+      provider="ServiceNow"
+      title="ServiceNow Certifications"
+      description="Master enterprise service management with ServiceNow certifications. Learn platform administration, development, and implementation."
+      courses={courses}
+    />
   );
 };
 

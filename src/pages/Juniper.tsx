@@ -1,5 +1,3 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import CourseLayout from '@/components/CourseLayout';
 
 const Juniper = () => {
@@ -32,16 +30,12 @@ const Juniper = () => {
   ];
 
   return (
-    <>
-      <Header />
-      <CourseLayout
-        provider="Juniper"
-        title="Juniper Certifications"
-        description="Master Juniper networking technologies with industry-leading certifications. Learn Junos OS, network security, and enterprise solutions."
-        courses={courses}
-      />
-      <Footer />
-    </>
+    <CourseLayout
+      provider="Juniper"
+      title="Juniper Certifications"
+      description="Master Juniper networking technologies with industry-leading certifications. Learn Junos OS, network security, and enterprise solutions."
+      courses={courses}
+    />
   );
 };
 

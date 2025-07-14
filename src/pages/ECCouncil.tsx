@@ -1,5 +1,3 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import CourseLayout from '@/components/CourseLayout';
 
 const ECCouncil = () => {
@@ -32,16 +30,12 @@ const ECCouncil = () => {
   ];
 
   return (
-    <>
-      <Header />
-      <CourseLayout
-        provider="EC-Council"
-        title="EC-Council Certifications"
-        description="Master cybersecurity with globally recognized EC-Council certifications. Learn ethical hacking, digital forensics, and advanced security techniques."
-        courses={courses}
-      />
-      <Footer />
-    </>
+    <CourseLayout
+      provider="EC-Council"
+      title="EC-Council Certifications"
+      description="Master cybersecurity with globally recognized EC-Council certifications. Learn ethical hacking, digital forensics, and advanced security techniques."
+      courses={courses}
+    />
   );
 };
 

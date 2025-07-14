@@ -1,5 +1,3 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import CourseLayout from '@/components/CourseLayout';
 
 const Prince2 = () => {
@@ -27,16 +25,12 @@ const Prince2 = () => {
   ];
 
   return (
-    <>
-      <Header />
-      <CourseLayout
-        provider="PRINCE2"
-        title="PRINCE2 Certifications"
-        description="Master project management with PRINCE2 methodology. Learn structured approach to project management and agile delivery methods."
-        courses={courses}
-      />
-      <Footer />
-    </>
+    <CourseLayout
+      provider="PRINCE2"
+      title="PRINCE2 Certifications"
+      description="Master project management with PRINCE2 methodology. Learn structured approach to project management and agile delivery methods."
+      courses={courses}
+    />
   );
 };
 

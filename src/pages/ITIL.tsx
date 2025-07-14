@@ -1,5 +1,3 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import CourseLayout from '@/components/CourseLayout';
 
 const ITIL = () => {
@@ -32,16 +30,12 @@ const ITIL = () => {
   ];
 
   return (
-    <>
-      <Header />
-      <CourseLayout
-        provider="ITIL"
-        title="ITIL Certifications"
-        description="Master IT Service Management with ITIL 4 framework. Learn best practices for delivering exceptional IT services and digital transformation."
-        courses={courses}
-      />
-      <Footer />
-    </>
+    <CourseLayout
+      provider="ITIL"
+      title="ITIL Certifications"
+      description="Master IT Service Management with ITIL 4 framework. Learn best practices for delivering exceptional IT services and digital transformation."
+      courses={courses}
+    />
   );
 };
 

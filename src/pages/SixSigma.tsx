@@ -1,5 +1,3 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import CourseLayout from '@/components/CourseLayout';
 
 const SixSigma = () => {
@@ -32,16 +30,12 @@ const SixSigma = () => {
   ];
 
   return (
-    <>
-      <Header />
-      <CourseLayout
-        provider="Six Sigma"
-        title="Six Sigma Certifications"
-        description="Master process improvement with Six Sigma methodology. Learn quality management, statistical analysis, and lean principles."
-        courses={courses}
-      />
-      <Footer />
-    </>
+    <CourseLayout
+      provider="Six Sigma"
+      title="Six Sigma Certifications"
+      description="Master process improvement with Six Sigma methodology. Learn quality management, statistical analysis, and lean principles."
+      courses={courses}
+    />
   );
 };
 

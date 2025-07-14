@@ -35,6 +35,7 @@ import TOGAF from "./pages/TOGAF";
 import DevOps from "./pages/DevOps";
 import ISTQB from "./pages/ISTQB";
 import IIBA from "./pages/IIBA";
+import CEH from "./pages/subcourses/CEH";
 
 const queryClient = new QueryClient();
 
@@ -76,6 +77,7 @@ const App = () => (
           <Route path="/devops" element={<DevOps />} />
           <Route path="/istqb" element={<ISTQB />} />
           <Route path="/iiba" element={<IIBA />} />
+          <Route path="/ec-council/ceh-certified-ethical-hacker" element={<CEH />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

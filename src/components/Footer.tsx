@@ -56,14 +56,36 @@ const Footer = () => {
 
           {/* Certifications */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Certifications</h4>
-            <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-primary transition-colors">Cisco</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Microsoft</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">AWS</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">CompTIA</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">VMware</a></li>
-            </ul>
+            <h4 className="text-lg font-semibold mb-4">All Certifications</h4>
+            <div className="grid grid-cols-2 gap-1 text-gray-300 text-sm">
+              <a href="/cisco" className="hover:text-primary transition-colors">Cisco</a>
+              <a href="/microsoft" className="hover:text-primary transition-colors">Microsoft</a>
+              <a href="/aws" className="hover:text-primary transition-colors">AWS</a>
+              <a href="/comptia" className="hover:text-primary transition-colors">CompTIA</a>
+              <a href="/vmware" className="hover:text-primary transition-colors">VMware</a>
+              <a href="/google" className="hover:text-primary transition-colors">Google</a>
+              <a href="/oracle" className="hover:text-primary transition-colors">Oracle</a>
+              <a href="/pmi" className="hover:text-primary transition-colors">PMI</a>
+              <a href="/isaca" className="hover:text-primary transition-colors">ISACA</a>
+              <a href="/fortinet" className="hover:text-primary transition-colors">Fortinet</a>
+              <a href="/ec-council" className="hover:text-primary transition-colors">EC-Council</a>
+              <a href="/itil" className="hover:text-primary transition-colors">ITIL</a>
+              <a href="/prince2" className="hover:text-primary transition-colors">Prince2</a>
+              <a href="/juniper" className="hover:text-primary transition-colors">Juniper</a>
+              <a href="/salesforce" className="hover:text-primary transition-colors">Salesforce</a>
+              <a href="/servicenow" className="hover:text-primary transition-colors">ServiceNow</a>
+              <a href="/scrum" className="hover:text-primary transition-colors">Scrum</a>
+              <a href="/six-sigma" className="hover:text-primary transition-colors">Six Sigma</a>
+              <a href="/ibm" className="hover:text-primary transition-colors">IBM</a>
+              <a href="/sap" className="hover:text-primary transition-colors">SAP</a>
+              <a href="/splunk" className="hover:text-primary transition-colors">Splunk</a>
+              <a href="/palo-alto" className="hover:text-primary transition-colors">Palo Alto</a>
+              <a href="/kubernetes" className="hover:text-primary transition-colors">Kubernetes</a>
+              <a href="/togaf" className="hover:text-primary transition-colors">TOGAF</a>
+              <a href="/devops" className="hover:text-primary transition-colors">DevOps</a>
+              <a href="/istqb" className="hover:text-primary transition-colors">ISTQB</a>
+              <a href="/iiba" className="hover:text-primary transition-colors">IIBA</a>
+            </div>
           </div>
         </div>
 

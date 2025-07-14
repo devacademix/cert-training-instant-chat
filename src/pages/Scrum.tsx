@@ -1,5 +1,3 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import CourseLayout from '@/components/CourseLayout';
 
 const Scrum = () => {
@@ -32,16 +30,12 @@ const Scrum = () => {
   ];
 
   return (
-    <>
-      <Header />
-      <CourseLayout
-        provider="Scrum"
-        title="Scrum Certifications"
-        description="Master agile project management with Scrum framework. Learn ScrumMaster, Product Owner, and development team practices."
-        courses={courses}
-      />
-      <Footer />
-    </>
+    <CourseLayout
+      provider="Scrum"
+      title="Scrum Certifications"
+      description="Master agile project management with Scrum framework. Learn ScrumMaster, Product Owner, and development team practices."
+      courses={courses}
+    />
   );
 };
 
