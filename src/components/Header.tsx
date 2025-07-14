@@ -2,8 +2,10 @@ import { Phone, Mail, MessageCircle, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { courseCategories } from "@/utils/courseUtils";
+import { useState } from "react";
 
 const Header = () => {
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const whatsappNumber = "+918603516998";
   const whatsappLink = "https://wa.me/c/918603516998";
   const email = "info@globaltrainingcertifications.org";
@@ -86,44 +88,63 @@ const Header = () => {
             width: 'max-content'
           }}>
             {/* Duplicate the categories for seamless looping */}
-            {[...courseCategories, ...courseCategories].map((category, index) => (
-              <div key={`${category.name}-${index}`} className="relative group flex-shrink-0">
-                <Link
-                  to={category.path}
-                  className="inline-flex items-center gap-1 text-white hover:bg-white/10 px-4 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap"
-                >
-                  {category.name}
-                  <ChevronDown className="h-4 w-4" />
-                </Link>
-                
-                {/* Dropdown menu */}
-                <div className="absolute top-full left-0 mt-1 w-80 bg-white text-gray-900 shadow-glow rounded-lg z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2">
-                  <div className="p-4">
-                    <h4 className="font-semibold text-primary mb-3 border-b pb-2">{category.name} Certifications</h4>
-                    <ul className="space-y-1 max-h-64 overflow-y-auto">
-                      {category.subcourses.map((course, courseIndex) => (
-                        <li key={courseIndex}>
-                          <Link
-                            to={`${category.path}/${course.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-]/gi, '')}`}
-                            className="block text-left w-full text-sm text-gray-600 hover:text-primary hover:bg-gray-50 p-2 rounded transition-colors"
-                          >
-                            • {course}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="mt-4 pt-3 border-t">
-                      <button
-                        onClick={() => window.open(whatsappLink, '_blank')}
-                        className="w-full bg-primary text-white px-4 py-2 rounded text-sm hover:bg-primary-dark transition-colors shadow-sm"
-                      >
-                        Get Pricing on WhatsApp
-                      </button>
+            {[...courseCategories, ...courseCategories].map((category, index) => {
+              const dropdownKey = `${category.name}-${index}`;
+              const isOpen = openDropdown === dropdownKey;
+              
+              return (
+                <div key={dropdownKey} className="relative flex-shrink-0">
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setOpenDropdown(isOpen ? null : dropdownKey);
+                    }}
+                    onMouseEnter={() => setOpenDropdown(dropdownKey)}
+                    onMouseLeave={() => setOpenDropdown(null)}
+                    className="inline-flex items-center gap-1 text-white hover:bg-white/10 px-4 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap"
+                  >
+                    {category.name}
+                    <ChevronDown className={`h-4 w-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  
+                  {/* Dropdown menu */}
+                  <div 
+                    className={`absolute top-full left-0 mt-1 w-80 bg-white text-gray-900 shadow-glow rounded-lg z-[100] transition-all duration-200 ${
+                      isOpen 
+                        ? 'opacity-100 visible translate-y-0' 
+                        : 'opacity-0 invisible translate-y-2'
+                    }`}
+                    onMouseEnter={() => setOpenDropdown(dropdownKey)}
+                    onMouseLeave={() => setOpenDropdown(null)}
+                  >
+                    <div className="p-4">
+                      <h4 className="font-semibold text-primary mb-3 border-b pb-2">{category.name} Certifications</h4>
+                      <ul className="space-y-1 max-h-64 overflow-y-auto">
+                        {category.subcourses.map((course, courseIndex) => (
+                          <li key={courseIndex}>
+                            <Link
+                              to={`${category.path}/${course.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-]/gi, '')}`}
+                              className="block text-left w-full text-sm text-gray-600 hover:text-primary hover:bg-gray-50 p-2 rounded transition-colors"
+                              onClick={() => setOpenDropdown(null)}
+                            >
+                              • {course}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="mt-4 pt-3 border-t">
+                        <button
+                          onClick={() => window.open(whatsappLink, '_blank')}
+                          className="w-full bg-primary text-white px-4 py-2 rounded text-sm hover:bg-primary-dark transition-colors shadow-sm"
+                        >
+                          Get Pricing on WhatsApp
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </nav>
