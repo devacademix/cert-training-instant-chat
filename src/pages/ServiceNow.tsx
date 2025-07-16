@@ -30,6 +30,7 @@ const ServiceNow = () => {
       title="ServiceNow Certifications"
       description="Master enterprise service management with ServiceNow certifications. Learn platform administration, development, and implementation."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop"
     />
   );
 };

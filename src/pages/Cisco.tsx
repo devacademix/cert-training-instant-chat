@@ -40,6 +40,7 @@ const Cisco = () => {
       title="Cisco Certifications"
       description="Master networking technologies with Cisco's comprehensive certification program. From entry-level CCNA to expert-level CCIE, build your networking career with industry-recognized credentials."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&h=600&fit=crop"
     />
   );
 };

@@ -29,6 +29,7 @@ const Kubernetes = () => {
         title="Kubernetes Certifications"
         description="Master container orchestration with Kubernetes certifications. Learn cluster administration, application development, and security."
         courses={courses}
+        imageUrl="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&h=600&fit=crop"
       />
       <Footer />
     </>

@@ -34,6 +34,7 @@ const DevOps = () => {
         title="DevOps Certifications"
         description="Master modern software delivery with DevOps certifications. Learn automation, CI/CD, and reliability engineering practices."
         courses={courses}
+        imageUrl="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop"
       />
       <Footer />
     </>

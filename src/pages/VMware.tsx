@@ -35,6 +35,7 @@ const VMware = () => {
       title="VMware Certifications"
       description="Master virtualization and cloud infrastructure with VMware certifications. Learn to design, deploy, and manage virtualized data center environments."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop"
     />
   );
 };

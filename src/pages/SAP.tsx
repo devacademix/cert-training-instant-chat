@@ -39,6 +39,7 @@ const SAP = () => {
         title="SAP Certifications"
         description="Master enterprise resource planning with SAP certifications. Learn ERP implementation, customization, and business processes."
         courses={courses}
+        imageUrl="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
       />
       <Footer />
     </>

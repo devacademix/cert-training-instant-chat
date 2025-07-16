@@ -40,6 +40,7 @@ const Microsoft = () => {
       title="Microsoft Certifications"
       description="Advance your career with Microsoft's role-based certifications. Cover cloud computing, modern workplace, security, and business applications with hands-on training."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop"
     />
   );
 };

@@ -35,6 +35,7 @@ const Scrum = () => {
       title="Scrum Certifications"
       description="Master agile project management with Scrum framework. Learn ScrumMaster, Product Owner, and development team practices."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
     />
   );
 };

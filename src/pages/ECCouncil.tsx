@@ -35,6 +35,7 @@ const ECCouncil = () => {
       title="EC-Council Certifications"
       description="Master cybersecurity with globally recognized EC-Council certifications. Learn ethical hacking, digital forensics, and advanced security techniques."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop"
     />
   );
 };

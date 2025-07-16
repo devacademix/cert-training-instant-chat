@@ -35,6 +35,7 @@ const SixSigma = () => {
       title="Six Sigma Certifications"
       description="Master process improvement with Six Sigma methodology. Learn quality management, statistical analysis, and lean principles."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1541462608143-67571c6738dd?w=800&h=600&fit=crop"
     />
   );
 };

@@ -35,6 +35,7 @@ const Salesforce = () => {
       title="Salesforce Certifications"
       description="Master the world's #1 CRM platform with Salesforce certifications. Learn administration, development, and specialized cloud solutions."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop"
     />
   );
 };

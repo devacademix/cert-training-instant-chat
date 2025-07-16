@@ -35,6 +35,7 @@ const Google = () => {
       title="Google Cloud Certifications"
       description="Validate your Google Cloud expertise with industry-recognized certifications. From digital transformation to data engineering and cloud architecture."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=800&h=600&fit=crop"
     />
   );
 };

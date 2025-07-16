@@ -34,6 +34,7 @@ const Splunk = () => {
         title="Splunk Certifications"
         description="Master big data analytics with Splunk certifications. Learn data analysis, monitoring, and security intelligence."
         courses={courses}
+        imageUrl="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
       />
       <Footer />
     </>

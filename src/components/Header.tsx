@@ -100,7 +100,6 @@ const Header = () => {
                       setOpenDropdown(isOpen ? null : dropdownKey);
                     }}
                     onMouseEnter={() => setOpenDropdown(dropdownKey)}
-                    onMouseLeave={() => setOpenDropdown(null)}
                     className="inline-flex items-center gap-1 text-white hover:bg-white/10 px-4 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap"
                   >
                     {category.name}

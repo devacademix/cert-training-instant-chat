@@ -35,6 +35,7 @@ const ITIL = () => {
       title="ITIL Certifications"
       description="Master IT Service Management with ITIL 4 framework. Learn best practices for delivering exceptional IT services and digital transformation."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=600&fit=crop"
     />
   );
 };

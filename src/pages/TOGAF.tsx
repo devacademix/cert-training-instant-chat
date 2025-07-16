@@ -29,6 +29,7 @@ const TOGAF = () => {
         title="TOGAF Certifications"
         description="Master enterprise architecture with TOGAF framework. Learn architectural design, governance, and digital transformation strategies."
         courses={courses}
+        imageUrl="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop"
       />
       <Footer />
     </>

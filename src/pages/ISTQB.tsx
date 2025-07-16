@@ -34,6 +34,7 @@ const ISTQB = () => {
         title="ISTQB Testing Certifications"
         description="Master software testing with ISTQB certifications. Learn testing methodologies, automation, and quality assurance practices."
         courses={courses}
+        imageUrl="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800&h=600&fit=crop"
       />
       <Footer />
     </>

@@ -25,6 +25,7 @@ const IIA = () => {
       title="IIA Certifications"
       description="Advance your internal audit career with The Institute of Internal Auditors' globally recognized certifications. Build expertise in audit, risk, and governance."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop"
     />
   );
 };

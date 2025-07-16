@@ -30,6 +30,7 @@ const PMI = () => {
       title="PMI Certifications"
       description="Lead successful projects with PMI's globally recognized project management certifications. From traditional to agile methodologies and risk management."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
     />
   );
 };

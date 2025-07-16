@@ -34,6 +34,7 @@ const PaloAlto = () => {
         title="Palo Alto Networks Certifications"
         description="Master next-generation cybersecurity with Palo Alto Networks certifications. Learn firewall administration and security engineering."
         courses={courses}
+        imageUrl="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop"
       />
       <Footer />
     </>

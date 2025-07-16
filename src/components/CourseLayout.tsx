@@ -16,9 +16,10 @@ interface CourseLayoutProps {
   title: string;
   description: string;
   courses: Course[];
+  imageUrl?: string;
 }
 
-const CourseLayout = ({ provider, title, description, courses }: CourseLayoutProps) => {
+const CourseLayout = ({ provider, title, description, courses, imageUrl }: CourseLayoutProps) => {
   const whatsappLink = "https://wa.me/c/918603516998";
 
   const benefits = [
@@ -125,7 +126,7 @@ const CourseLayout = ({ provider, title, description, courses }: CourseLayoutPro
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-glow bg-white/10 backdrop-blur-sm border border-white/20">
                 <img 
-                  src={`https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop`}
+                  src={imageUrl || `https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop`}
                   alt={`${provider} Certification Training`}
                   className="w-full h-auto object-cover"
                 />

@@ -39,6 +39,7 @@ const IBM = () => {
         title="IBM Certifications"
         description="Master enterprise technology with IBM certifications. Learn cloud computing, AI, security, and data science solutions."
         courses={courses}
+        imageUrl="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop"
       />
       <Footer />
     </>

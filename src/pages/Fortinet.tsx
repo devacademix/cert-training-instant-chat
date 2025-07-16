@@ -30,6 +30,7 @@ const Fortinet = () => {
       title="Fortinet Certifications"
       description="Strengthen your cybersecurity expertise with Fortinet's Network Security Expert program. Master next-generation firewall and security technologies."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=600&fit=crop"
     />
   );
 };

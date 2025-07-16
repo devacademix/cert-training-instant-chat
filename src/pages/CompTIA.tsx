@@ -45,6 +45,7 @@ const CompTIA = () => {
       title="CompTIA Certifications"
       description="Build your IT career foundation with CompTIA's vendor-neutral certifications. Cover core IT skills from A+ to advanced security and cloud technologies."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop"
     />
   );
 };

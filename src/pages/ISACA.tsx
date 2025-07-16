@@ -30,6 +30,7 @@ const ISACA = () => {
       title="ISACA Certifications"
       description="Excel in IT governance, risk management, and security with ISACA's prestigious certifications. Globally recognized credentials for IT professionals."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop"
     />
   );
 };

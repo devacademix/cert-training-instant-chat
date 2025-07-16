@@ -35,6 +35,7 @@ const Snowflake = () => {
       title="Snowflake Certifications"
       description="Master the cloud data platform with Snowflake certifications. From core concepts to advanced architecture and data engineering specializations."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop"
     />
   );
 };

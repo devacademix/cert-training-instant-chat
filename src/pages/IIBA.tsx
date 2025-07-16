@@ -34,6 +34,7 @@ const IIBA = () => {
         title="IIBA Business Analysis Certifications"
         description="Master business analysis with IIBA certifications. Learn requirements gathering, stakeholder management, and data analysis."
         courses={courses}
+        imageUrl="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
       />
       <Footer />
     </>

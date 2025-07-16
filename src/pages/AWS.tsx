@@ -40,6 +40,7 @@ const AWS = () => {
       title="AWS Certifications"
       description="Validate your cloud expertise with Amazon Web Services certifications. From cloud practitioner to specialty levels, master the world's leading cloud platform."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=800&h=600&fit=crop"
     />
   );
 };

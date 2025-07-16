@@ -35,6 +35,7 @@ const Oracle = () => {
       title="Oracle Certifications"
       description="Advance your database and cloud skills with Oracle certifications. Cover database administration, Java development, and cloud infrastructure."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop"
     />
   );
 };

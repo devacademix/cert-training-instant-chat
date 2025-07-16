@@ -30,6 +30,7 @@ const Prince2 = () => {
       title="PRINCE2 Certifications"
       description="Master project management with PRINCE2 methodology. Learn structured approach to project management and agile delivery methods."
       courses={courses}
+      imageUrl="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
     />
   );
 };
